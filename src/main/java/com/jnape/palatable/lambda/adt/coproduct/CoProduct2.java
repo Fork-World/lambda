@@ -17,7 +17,7 @@ import java.util.function.Function;
  * @param <B> a type parameter representing the second possible type of this coproduct
  */
 @FunctionalInterface
-public interface CoProduct2<A, B> extends Functor<B>, Bifunctor<A, B> {
+public interface CoProduct2<A, B> extends Functor<B, CoProduct2<A, ?>>, Bifunctor<A, B> {
 
     /**
      * Type-safe convergence requiring a match against all potential types.

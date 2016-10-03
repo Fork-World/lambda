@@ -16,7 +16,7 @@ import java.util.function.Function;
  * @see CoProduct2
  */
 @FunctionalInterface
-public interface CoProduct4<A, B, C, D> extends Functor<D>, Bifunctor<C, D> {
+public interface CoProduct4<A, B, C, D> extends Functor<D, CoProduct4<A, B, C, ?>>, Bifunctor<C, D> {
 
     /**
      * Type-safe convergence requiring a match against all potential types.
