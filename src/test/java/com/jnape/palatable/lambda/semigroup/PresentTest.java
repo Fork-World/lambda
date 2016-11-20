@@ -16,9 +16,9 @@ public class PresentTest {
     }
 
     @Test
-    public void emptyValueSubvertsSemigroup() {
-        assertEquals(Optional.empty(), new Present<>(ADDITION).apply(Optional.empty(), Optional.of(1)));
-        assertEquals(Optional.empty(), new Present<>(ADDITION).apply(Optional.of(1), Optional.empty()));
+    public void emptyValuesDoNotSubvertSemigroup() {
+        assertEquals(Optional.of(1), new Present<>(ADDITION).apply(Optional.of(1), Optional.empty()));
+        assertEquals(Optional.of(1), new Present<>(ADDITION).apply(Optional.empty(), Optional.of(1)));
         assertEquals(Optional.empty(), new Present<>(ADDITION).apply(Optional.empty(), Optional.empty()));
     }
 }

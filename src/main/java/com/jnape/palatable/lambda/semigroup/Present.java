@@ -32,6 +32,8 @@ public final class Present<A> implements Monoid<Optional<A>> {
 
     @Override
     public Optional<A> apply(Optional<A> optX, Optional<A> optY) {
-        return optX.flatMap(x -> optY.flatMap(y -> Optional.of(semigroup.apply(x, y))));
+        return optX.flatMap(x -> optY.flatMap(y -> Optional.of(semigroup.apply(x, y))).map(Optional::of).orElse(Optional.of(x)))
+                .map(Optional::of)
+                .orElse(optY);
     }
 }
