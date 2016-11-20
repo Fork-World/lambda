@@ -1,6 +1,7 @@
-package com.jnape.palatable.lambda.semigroup;
+package com.jnape.palatable.lambda.monoid;
 
 import com.jnape.palatable.lambda.monoid.Monoid;
+import com.jnape.palatable.lambda.semigroup.Semigroup;
 
 import java.util.Optional;
 

@@ -2,7 +2,7 @@ package testsupport.traits;
 
 import com.jnape.palatable.lambda.functions.builtin.fn2.Map;
 import com.jnape.palatable.lambda.functor.applicative.Applicative;
-import com.jnape.palatable.lambda.semigroup.Present;
+import com.jnape.palatable.lambda.monoid.Present;
 import com.jnape.palatable.traitor.traits.Trait;
 
 import java.util.Optional;

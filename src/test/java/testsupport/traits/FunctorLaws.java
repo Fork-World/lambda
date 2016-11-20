@@ -1,7 +1,7 @@
 package testsupport.traits;
 
 import com.jnape.palatable.lambda.functor.Functor;
-import com.jnape.palatable.lambda.semigroup.Present;
+import com.jnape.palatable.lambda.monoid.Present;
 import com.jnape.palatable.traitor.traits.Trait;
 
 import java.util.Optional;
